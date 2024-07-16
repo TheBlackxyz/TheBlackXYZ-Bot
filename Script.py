@@ -437,12 +437,12 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v2.7.1 [ Sᴛᴀʙʟᴇ ]</code></b>"""
 
     PROGRESS_BAR = """\n
-❰TheBlackXYZ Rename❱
+╭━━━━❰ TheBlack Renaming..❱━➣
 ┣⪼ 🗂️ : {1} | {2}
 ┣⪼ ⏳️ : {0}%
 ┣⪼ 🚀 : {3}/s
 ┣⪼ ⏱️ : {4}
- """
+╰━━━━━━━━━━━━━━━➣ """
 
 
     STREAM_TXT = """<b><u>HOW TO GET STREAM AND DOWNLOAD LINK :</u>
