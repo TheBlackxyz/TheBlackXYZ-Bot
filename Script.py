@@ -225,21 +225,26 @@ Nᴀᴍᴇ - {}"""
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """<b>Fɪʟᴇɴᴀᴍᴇ : {file_name}
-
 <b> Size ⚙️: {file_size}</b>""" 
 
     IMDB_TEMPLATE_TXT = """
-<b>Title: {title}</b>
+<b>Query: {qurey}
 
-<b>Genres:</b> {genres}
-<b>Rating:</b> {rating}/10 Based on {votes} user ratings.
-<b>RunTime:</b> {runtime} Minutes
-<b>Release Info:</b> {release_date}
+IMDb Data:
+
+<b>🏷 Title</b>: <a href={url}>{title}</a>
+🎭 Genres: {genres}
+📆 Year: <a href={url}/releaseinfo>{year}</a>
+🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
+☀️ Languages : <code>{languages}</code>
+📀 RunTime: {runtime} Minutes
+📆 Release Info : {release_date}
+🎛 Countries : <code>{countries}</code>
 
 
-<b>Requested by: {message.from_user.mention}</b>
+⏰Result Shown in: {remaining_seconds} <i>seconds</i> 🔥
 
-<b>Join Us: [MovieVerse Backup](https://t.me/movieversepremium)</b>"""
+Requested by : {message.from_user.mention}</b>"""
     
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
