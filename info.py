@@ -105,7 +105,7 @@ VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '8ba797ded52d10834ad4
 # if verify second shortner is True then fill below url and api
 VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', 'yamlinks.com')
 VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '8ba797ded52d10834ad44fc07bf9c659a67167d4')
-VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/TheBlackXYZ/155').
+VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', '').
 #Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'yamlinks.com')
