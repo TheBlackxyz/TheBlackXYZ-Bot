@@ -45,7 +45,7 @@ async def clone_menu(client, message):
         await db.add_clone_bot(bot.id, user_id, bot_token)
         await msg.edit_text(f"<b>sᴜᴄᴄᴇssғᴜʟʟʏ ᴄʟᴏɴᴇᴅ ʏᴏᴜʀ ʙᴏᴛ: @{bot.username}.\n\nʏᴏᴜ ᴄᴀɴ ᴄᴜsᴛᴏᴍɪsᴇ ʏᴏᴜʀ ᴄʟᴏɴᴇ ʙᴏᴛ ʙʏ /settings ᴄᴏᴍᴍᴀɴᴅ ɪɴ ʏᴏᴜʀ ᴄʟᴏɴᴇ ʙᴏᴛ</b>")
     except BaseException as e:
-        await msg.edit_text(f"<b>Bot Error:</b>\n\n<code>{e}</code>\n\n**Kindly forward this message to @icecube9680_bot to get assistance.**")
+        await msg.edit_text(f"<b>Bot Error:</b>\n\n<code>{e}</code>\n\n**Kindly forward this message to @Itz_rohan_24 to get assistance.**")
 
 @Client.on_message(filters.command('deleteclone'))
 async def delete_clone_menu(client, message):
