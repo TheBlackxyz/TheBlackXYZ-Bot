@@ -57,7 +57,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://TheBlackXYZBotMovies:TheBlackXYZBotMovies@cluster0.nu4uqj6.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'TheBlackXYZDB')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'theblackcollection')
 
 # If PREMIUM_AND_REFERAL_MODE is True Then Fill Below Variable, If Flase Then No Need To Fill.
 PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True)) # Set Ture Or False
@@ -105,7 +105,7 @@ VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '8ba797ded52d10834ad4
 # if verify second shortner is True then fill below url and api
 VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', 'yamlinks.com')
 VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '8ba797ded52d10834ad44fc07bf9c659a67167d4')
-VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', '').
+VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 't.me/TheBlackXYZ/155').
 #Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'yamlinks.com')
