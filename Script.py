@@ -220,8 +220,7 @@ Nᴀᴍᴇ - {}"""
 
     CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
 
-<b> Size ⚙️: {file_size}</b>
-Powered BY :@TheBlackXYZ""" 
+<b> Size ⚙️: {file_size}</b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
@@ -243,7 +242,7 @@ IMDb Data:
 Requested by : {message.from_user.mention}</b>"""
 
     PROGRESS_BAR = """\n
-╭━━━━❰TheBlackXYZ Renaming..❱━➣
+╭━━━━❰ Black Renaming... ❱━➣
 ┣⪼ 🗂️ : {1} | {2}
 ┣⪼ ⏳️ : {0}%
 ┣⪼ 🚀 : {3}/s
@@ -738,4 +737,3 @@ special Thanks To ❤️ Developers -
 
 
     
-
