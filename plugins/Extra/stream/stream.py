@@ -43,12 +43,6 @@ async def stream_start(client, message):
                 [
                     InlineKeyboardButton("sᴛʀᴇᴀᴍ 🖥", url=stream),
                     InlineKeyboardButton('ᴅᴏᴡɴʟᴏᴀᴅ 📥', url=download)
-               
-                ]
-            ],
-             [
-                 [
-                      InlineKeyboardButton('Suscribe', url="https://t.me/TheBlackXYZBotz") 
                   
                  ]
           
