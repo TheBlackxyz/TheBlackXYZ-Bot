@@ -62,11 +62,11 @@ class Database:
         'fsub': None,
         'tutorial': TUTORIAL,
         'is_tutorial': IS_TUTORIAL,
-        'vj': None,
-        'techvj': None,
-        'tech_vj': None,
-        'vjtech': None,
-        'vj_tech': None
+        'theblackxyz': None,
+        'theblack': None,
+        'theblackxyzbotz': None,
+        'black': None,
+        'blackbotz': None
     }
     
     def __init__(self, uri, database_name):
