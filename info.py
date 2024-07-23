@@ -69,7 +69,6 @@ SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'api.yamlinks.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', '8ba797ded52d10834ad44fc07bf9c659a67167d4')
 
-
 # Clone Information : If Clone Mode Is True Then Bot Clone Other Bots.
 CLONE_MODE = bool(environ.get('CLONE_MODE', True)) # Set True or False
 CLONE_DATABASE_URI = environ.get('CLONE_DATABASE_URI', "mongodb+srv://TheBlackXYZ24:TheBlackXYZ24@cluster0.cqt915d.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") # Necessary If clone mode is true
@@ -147,18 +146,6 @@ SEASONS = ["season 1", "season 2", "season 3", "season 4", "season 5", "season 6
 EPISODES = ["E01", "E02", "E03", "E04", "E05", "E06", "E07", "E08", "E09", "E10", "E11", "E12", "E13", "E14", "E15", "E16", "E17", "E18", "E19", "E20", "E21", "E22", "E23", "E24", "E25", "E26", "E27", "E28", "E29", "E30", "E31", "E32", "E33", "E34", "E35", "E36", "E37", "E38", "E39", "E40"]
 QUALITIES = ["360p", "480p", "720p", "1080p", "1440p", "2160p"]
 YEARS = ["1900", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"]
-
-
-#Restrick content 
-
-# Save Restricted Info : If True Then Bot Save Content From Restricted Channel Else Not
-# SAVE_RESTRICTED_MODE = bool(environ.get('SAVE_RESTRICTED_MODE', False)) # Set True or False
-
-
-# if SAVE_RESTRICTED_MODE is True Then Fill String Session Variable In Your Server Environment Variable, If Flase Then No Need To Fill.
-# Warning: Never Fill String Session Variable In Your Repo, If You Fill Then Your Account Can Be Access By Anyone.
-#SESSION_STRING = environ.get('SESSION_STRING', '') # PYROGRAM V2 Session
-            
 
 # Log Message 
 LOG_STR = "Current Cusomized Configurations are:-\n"
