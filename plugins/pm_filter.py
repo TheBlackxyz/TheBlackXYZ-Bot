@@ -1965,9 +1965,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
                 InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('💳 Gᴇᴛ Fʀᴇᴇ Oʀ Pᴀɪᴅ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ 💳', callback_data='subscription')
+                InlineKeyboardButton('Sᴜʙsᴄʀɪᴘᴛɪᴏɴ', callback_data='subscription'),
+                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=CHNL_LNK)
             ],[
-                InlineKeyboardButton('Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                InlineKeyboardButton('TʜᴇBʟᴀᴄᴋXYZ Bᴏᴛᴢ™', url=f"https://t.me/TheBlackXYZBotz")
             ]]
         else:
             buttons = [[
@@ -1979,7 +1980,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
                 InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=CHNL_LNK)
             ]]
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('Cʀᴇᴀᴛᴇ Yᴏᴜʀ Oᴡɴ Cʟᴏɴᴇ Bᴏᴛ', callback_data='clone')])
