@@ -213,17 +213,17 @@ async def start(client, message):
                 InlineKeyboardButton('TʜᴇBʟᴀᴄᴋXYZ Bᴏᴛᴢ™', url=f"https://t.me/TheBlackXYZBotz")
             ]]
         else:
-                buttons = [[
-                    InlineKeyboardButton('Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ', callback_data="shortlink_info"),
-                    InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
-                ],[
-                    InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
-                ],[
-                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=CHNL_LNK)
-                ]]
+            buttons = [[
+                InlineKeyboardButton('Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+                InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ', callback_data="shortlink_info"),
+                InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+            ],[
+                InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
+                InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
+            ],[
+                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=CHNL_LNK)
+            ]]
             if CLONE_MODE == True:
                 buttons.append([InlineKeyboardButton('Cʀᴇᴀᴛᴇ Yᴏᴜʀ Oᴡɴ Cʟᴏɴᴇ Bᴏᴛ', callback_data='clone')])
             reply_markup = InlineKeyboardMarkup(buttons)
