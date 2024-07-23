@@ -25,4 +25,5 @@ async def share_text(client, message):
         return
     await TheBlackXYZBotz.reply_text(
         text=f"**Here is Your Sharing Text 👇**\n\nhttps://t.me/share/url?url=" + quote(input_text),
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("♂️ Share", url=f"https://t.me/share/url?url={quote(input_text)}"),InlineKeyboardButton("✗ Update ✗", url="t.me/TheBlackXYZBotz")]]]))
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("♂️ Share", url=f"https://t.me/share/url?url={quote(input_text)}")]]])
+    )
