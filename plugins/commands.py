@@ -70,6 +70,8 @@ async def start(client, message):
             ],[
                 InlineKeyboardButton('Sᴜʙsᴄʀɪᴘᴛɪᴏɴ', callback_data='subscription'),
                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=CHNL_LNK)
+            ],[
+                InlineKeyboardButton('TʜᴇBʟᴀᴄᴋXYZ Bᴏᴛᴢ™', url=f"https://t.me/TheBlackXYZBotz")
             ]]
         else:
             buttons = [[
@@ -151,6 +153,8 @@ async def start(client, message):
             ],[
                 InlineKeyboardButton('Sᴜʙsᴄʀɪᴘᴛɪᴏɴ', callback_data='subscription'),
                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=CHNL_LNK)
+            ],[
+                InlineKeyboardButton('TʜᴇBʟᴀᴄᴋXYZ Bᴏᴛᴢ™', url=f"https://t.me/TheBlackXYZBotz")
             ]]
         else:
             buttons = [[
@@ -205,6 +209,8 @@ async def start(client, message):
             ],[
                 InlineKeyboardButton('Sᴜʙsᴄʀɪᴘᴛɪᴏɴ', callback_data='subscription'),
                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=CHNL_LNK)
+            ],[
+                InlineKeyboardButton('TʜᴇBʟᴀᴄᴋXYZ Bᴏᴛᴢ™', url=f"https://t.me/TheBlackXYZBotz")
             ]]
         else:
                 buttons = [[
