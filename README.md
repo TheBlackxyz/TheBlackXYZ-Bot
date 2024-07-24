@@ -24,7 +24,7 @@
   TheBlackXYZ-Bot
 </h1>
 
-# SUPPORT PLEASE 🥺🥺❤️
+<h1 align="center"> 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗣𝗹𝗲𝗮𝘀𝗲.... ❤️
 </p>
 <p align="center">
 <a href="https://www.instagram.com/the_black_xyz?igshid=YmMyMTA2M2Y="><img alt="replit" src="https://img.shields.io/badge/-Instagram-orange?style=for-the-badge&logo=instagram&logoColor=white"/></a> <a href="https://telegram.dog/TheBlackXYZBotz/TheBlackXYZ"><img alt="Telegram" src="https://img.shields.io/badge/TheBlackXYZBotz-2CA5E0?style=for-the-badge&logo=telegram&logoColor=green"/></a>
@@ -33,12 +33,12 @@
 
 ____________________________________________________________________________________________________________________________________________
 
-# Upcoming Features...
+<h1 align="center"> 𝗨𝗽𝗰𝗼𝗺𝗶𝗻𝗴 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀...
 • Colne 
 • solve 
 • How to edit repoo on yt - youtube.com/TheBlackXYZ24
-  
-# Amazing New Feature 😄
+
+# Amazing New Feature 
   
 - [x] Premium Plan Feature 
 - [x] Refer To Get Premium
@@ -61,8 +61,7 @@ ________________________________________________________________________________
 - [x] Bot Pm File Auto Delete
 - [x] Ai Spell Check 
 - [x] Custom url Shotner verification 
-- [x] Multiple Features
-- [ ] 
+- [x] Multiple Feature
 ____________________________________________________________________________________________________________________________________________
 
 # Commands🫣
