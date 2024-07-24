@@ -301,16 +301,16 @@ Edit info.py with variables as given below then run bot
 ____________________________________________________________________________________________________________________________________________
 
 # Thanks To  Everyone 💞❤️
- - <b>Thanks To Dan For His Awesome
- - [Library](https://github.com/pyrogram/pyrogram)
- - Thanks To Mayuri-Chan For His Awesome
- - [Library](https://github.com/Mayuri-Chan/pyrofork)
+ - <b>
+ - Thanks To Dan For His Awesome-[Pyrogram]
+ - Thanks To [Mayuri-Chan]-[Pyrofork]
  - Thanks To [Tech VJ]
  - Thanks To [MrMKN]
  - Thanks To [Eva Mariea]
  - Thanks To [ LazyDeveloperr]
  - Thanks To [ TheBlackXYZBotz]
- - Thanks To All Everyone In This Journey</b>
+ - Thanks To All Everyone In This Journey 💓
+ - </b>
 
 ____________________________________________________________________________________________________________________________________________
 
