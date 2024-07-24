@@ -58,6 +58,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'blackcollection')
 RENAME_MODE = bool(environ.get('RENAME_MODE', True)) # Set True or False
 
 # Channel Links 😞
+THEBLACKXYZBOTZ = environ.get('THEBLACKXYZBOTZ', 'https://t.me/TheBlackXYZBotz')
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/TheBlackXYZ_Movie_Group')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/TheBlackXYZ')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/TheBlackXYZ/155')
