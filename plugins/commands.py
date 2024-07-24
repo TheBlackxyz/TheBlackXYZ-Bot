@@ -63,6 +63,7 @@ async def start(client, message):
                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=CHNL_LNK)
             ],[
                 InlineKeyboardButton('TʜᴇBʟᴀᴄᴋXYZ Bᴏᴛᴢ™', url='t.me/TheBlackXYZBotz')
+                
             ]]
         else:
             buttons = [[
@@ -146,6 +147,7 @@ async def start(client, message):
                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=CHNL_LNK)
             ],[ 
                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='t.me/TheBlackXYZBotz')
+                
             ]]
         else:
             buttons = [[
@@ -188,8 +190,8 @@ async def start(client, message):
                     await client.send_message(chat_id = user_id, text = "<b>You Have Successfully Completed Total Referal.\n\nYou Added In Premium For {}</b>".format(REFERAL_PREMEIUM_TIME))
                     return 
         else:
-            if PREMIUM_AND_REFERAL_MODE == True:
-                buttons = [[
+        if PREMIUM_AND_REFERAL_MODE == True:
+            buttons = [[
                 InlineKeyboardButton('Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
                 InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ', callback_data="shortlink_info"),
@@ -202,6 +204,7 @@ async def start(client, message):
                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=CHNL_LNK)
             ],[ 
                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='t.me/TheBlackXYZBotz')
+                
             ]]
         else:
             buttons = [[
