@@ -34,7 +34,7 @@ async def start(client, message):
             InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url="https://t.me/The_Black_XYZ_SupportChat"),
             InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/TheBlackXYZ_Movie_Group')
         ],[
-            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+            InlineKeyboardButton('👀Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ👀', url=CHNL_LNK)
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -58,10 +58,9 @@ async def start(client, message):
                 InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
                 InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('Sᴜʙsᴄʀɪᴘᴛɪᴏɴ', callback_data='subscription'),
-                InlineKeyboardButton('Bᴏᴛᴢ Cʜᴀɴɴᴇʟ', url=THEBLACKXYZBOTZ)
+                InlineKeyboardButton('💸Sᴜʙsᴄʀɪᴘᴛɪᴏɴ💸', callback_data='subscription')
             ],[
-                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                InlineKeyboardButton('👀Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ👀', url=CHNL_LNK)
             ]]
         else:
             buttons = [[
@@ -73,7 +72,7 @@ async def start(client, message):
                 InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
                 InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                InlineKeyboardButton('👀Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ👀', url=CHNL_LNK)
             ]]
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('Cʀᴇᴀᴛᴇ Yᴏᴜʀ Oᴡɴ Cʟᴏɴᴇ Bᴏᴛ', callback_data='clone')])
@@ -141,10 +140,9 @@ async def start(client, message):
                 InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
                 InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('Sᴜʙsᴄʀɪᴘᴛɪᴏɴ', callback_data='subscription'),
-                InlineKeyboardButton('Bᴏᴛᴢ Cʜᴀɴɴᴇʟ', url=THEBLACKXYZBOTZ)
+                InlineKeyboardButton('💸Sᴜʙsᴄʀɪᴘᴛɪᴏɴ💸', callback_data='subscription')
             ],[
-                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                InlineKeyboardButton('👀Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ👀', url=CHNL_LNK)
             ]]
         else:
             buttons = [[
@@ -156,7 +154,7 @@ async def start(client, message):
                 InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
                 InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                InlineKeyboardButton('👀Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ👀', url=CHNL_LNK)
             ]]
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('Cʀᴇᴀᴛᴇ Yᴏᴜʀ Oᴡɴ Cʟᴏɴᴇ Bᴏᴛ', callback_data='clone')])
@@ -197,10 +195,9 @@ async def start(client, message):
                     InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('Sᴜʙsᴄʀɪᴘᴛɪᴏɴ', callback_data='subscription'),
-                    InlineKeyboardButton('Bᴏᴛᴢ Cʜᴀɴɴᴇʟ', url=THEBLACKXYZBOTZ)
+                    InlineKeyboardButton('💸Sᴜʙsᴄʀɪᴘᴛɪᴏɴ💸', callback_data='subscription')
                 ],[
-                    InlineKeyboardButton('Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                    InlineKeyboardButton('👀Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ👀', url=CHNL_LNK)
                 ]]
             else:
                 buttons = [[
@@ -212,7 +209,7 @@ async def start(client, message):
                     InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                    InlineKeyboardButton('👀Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ👀', url=CHNL_LNK)
                 ]]
             if CLONE_MODE == True:
                 buttons.append([InlineKeyboardButton('Cʀᴇᴀᴛᴇ Yᴏᴜʀ Oᴡɴ Cʟᴏɴᴇ Bᴏᴛ', callback_data='clone')])
