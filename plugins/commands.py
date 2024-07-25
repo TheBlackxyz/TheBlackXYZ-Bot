@@ -141,7 +141,7 @@ async def start(client, message):
                 InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
                 InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('Pᴀɪᴅ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ', callback_data='subscription'),
+                InlineKeyboardButton('Sᴜʙsᴄʀɪᴘᴛɪᴏɴ', callback_data='subscription'),
                 InlineKeyboardButton('Bᴏᴛᴢ Cʜᴀɴɴᴇʟ', url=THEBLACKXYZBOTZ)
             ],[
                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
@@ -197,7 +197,7 @@ async def start(client, message):
                     InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('Pᴀɪᴅ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ', callback_data='subscription'),
+                    InlineKeyboardButton('Sᴜʙsᴄʀɪᴘᴛɪᴏɴ', callback_data='subscription'),
                     InlineKeyboardButton('Bᴏᴛᴢ Cʜᴀɴɴᴇʟ', url=THEBLACKXYZBOTZ)
                 ],[
                     InlineKeyboardButton('Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
