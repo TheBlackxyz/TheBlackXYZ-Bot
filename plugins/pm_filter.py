@@ -1965,7 +1965,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
                 InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('Pᴀɪᴅ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ', callback_data='subscription'),
+                InlineKeyboardButton('Sᴜʙsᴄʀɪᴘᴛɪᴏɴ', callback_data='subscription'),
                 InlineKeyboardButton('Bᴏᴛᴢ Cʜᴀɴɴᴇʟ', url=THEBLACKXYZBOTZ)
             ],[
                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
