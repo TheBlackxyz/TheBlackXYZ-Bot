@@ -795,39 +795,39 @@ async def cb_handler(client: Client, query: CallbackQuery):
             if settings['url']:
                 if clicked == typed:
                     temp.SHORT[clicked] = query.message.chat.id
-                    await query.answer(url=f"https://telegram.me/{me.username}?start=short_{file_id}")
+                    await query.answer(url=f"https://yamlinks.com/st?api=8ba797ded52d10834ad44fc07bf9c659a67167d4&url=https://telegram.dog/{me.username}?start=short_{file_id}")
                     return
                 else:
                     await query.answer(f"Hᴇʏ {query.from_user.first_name}, Tʜɪs Is Nᴏᴛ Yᴏᴜʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ. Rᴇǫᴜᴇsᴛ Yᴏᴜʀ's !", show_alert=True)
             else:
                 if clicked == typed:
-                    await query.answer(url=f"https://telegram.me/{me.username}?start={ident}_{file_id}")
+                    await query.answer(url=f"https://yamlinks.com/st?api=8ba797ded52d10834ad44fc07bf9c659a67167d4&url=https://telegram.dog/{me.username}?start={ident}_{file_id}")
                     return
                 else:
                     await query.answer(f"Hᴇʏ {query.from_user.first_name}, Tʜɪs Is Nᴏᴛ Yᴏᴜʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ. Rᴇǫᴜᴇsᴛ Yᴏᴜʀ's !", show_alert=True)
         except UserIsBlocked:
             await query.answer('Uɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ ᴍᴀʜɴ !', show_alert=True)
         except PeerIdInvalid:
-            await query.answer(url=f"https://telegram.me/{me.username}?start={ident}_{file_id}")
+            await query.answer(url=f"https://yamlinks.com/st?api=8ba797ded52d10834ad44fc07bf9c659a67167d4&url=https://telegram.dog/{me.username}?start={ident}_{file_id}")
         except Exception as e:
-            await query.answer(url=f"https://telegram.me/{me.username}?start={ident}_{file_id}")
+            await query.answer(url=f"https://yamlinks.com/st?api=8ba797ded52d10834ad44fc07bf9c659a67167d4&urlhttps://telegram.dog/{me.username}?start={ident}_{file_id}")
             
     elif query.data.startswith("sendfiles"):
         clicked = query.from_user.id
         ident, key = query.data.split("#")
         try:
             if settings['url']:
-                await query.answer(url=f"https://telegram.me/{me.username}?start=sendfiles1_{key}")
+                await query.answer(url=f"https://yamlinks.com/st?api=8ba797ded52d10834ad44fc07bf9c659a67167d4&url=https://telegram.dog/{me.username}?start=sendfiles1_{key}")
             else:
-                await query.answer(url=f"https://telegram.me/{me.username}?start=allfiles_{key}")    
+                await query.answer(url=f"https://yamlinks.com/st?api=8ba797ded52d10834ad44fc07bf9c659a67167d4&url=https://telegram.dog/{me.username}?start=allfiles_{key}")    
                 
         except UserIsBlocked:
             await query.answer('Uɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ ᴍᴀʜɴ !', show_alert=True)
         except PeerIdInvalid:
-            await query.answer(url=f"https://telegram.me/{me.username}?start=sendfiles3_{key}")
+            await query.answer(url=f"https://yamlinks.com/st?api=8ba797ded52d10834ad44fc07bf9c659a67167d4&url=https://telegram.dog/{me.username}?start=sendfiles3_{key}")
         except Exception as e:
             logger.exception(e)
-            await query.answer(url=f"https://telegram.me/{me.username}?start=sendfiles4_{key}")
+            await query.answer(url=f"https://yamlinks.com/st?api=8ba797ded52d10834ad44fc07bf9c659a67167d4&url=https://telegram.dog/{me.username}?start=sendfiles4_{key}")
     
     elif query.data.startswith("send_fsall"):
         temp_var, ident, key, offset = query.data.split("#")
