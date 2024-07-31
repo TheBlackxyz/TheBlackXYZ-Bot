@@ -141,8 +141,6 @@ ________________________________________________________________________________
 ```
 </details>
 
-# Contact - 
-Update Channel 🙂 <a href='https://telegram.dog/TheBlackXYZBotz'>Update Channel</a> Update Regarding For Repo.</b>
 
 # Add from .env
 Paste your .env contents to add multiple environment variables at once.
@@ -150,6 +148,7 @@ Paste your .env contents to add multiple environment variables at once.
 <details><summary><b>Add From.env</b></summary>
 
 ```
+PYTHON_VERSION= 3.10.8
 SESSION
 API_ID
 API_HASH
@@ -206,11 +205,6 @@ URL
 ```
 </details>
 
-# Render Env.(compulsory)
-```
-PYTHON_VERSION - 3.10.8
-
-```
 ____________________________________________________________________________________________________________________________________________
 
 # Variable ✅
@@ -220,7 +214,7 @@ ________________________________________________________________________________
 * `API_HASH`: Get this value from [telegram.org](https://my.telegram.org/apps)
 * `CHANNELS`: Username or ID of channel or group. Separate multiple IDs by space
 * `ADMINS`: Username or ID of Admin. Separate multiple Admins by space
-* `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/I36_OTWvT2w)
+* `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/TheBlackXYZ24)
 * `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com).
 * `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.</b>
 
