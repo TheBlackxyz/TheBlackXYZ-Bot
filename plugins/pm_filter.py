@@ -1345,31 +1345,31 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 if SHORTLINK_MODE == True:
                     if clicked == typed:
                         temp.SHORT[clicked] = query.message.chat.id
-                        await query.answer(url=f"https://yamlinks.com/st?api=8ba797ded52d10834ad44fc07bf9c659a67167d4&url=https://telegram.me/{temp.U_NAME}?start=short_{file_id}")
+                        await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start=short_{file_id}")
                         return
                     else:
                         await query.answer(f"Hᴇʏ {query.from_user.first_name}, Tʜɪs Is Nᴏᴛ Yᴏᴜʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ. Rᴇǫᴜᴇsᴛ Yᴏᴜʀ's !", show_alert=True)
                 else:
-                    await query.answer(url=f"https://yamlinks.com/st?api=8ba797ded52d10834ad44fc07bf9c659a67167d4&url=https://telegram.dog/{temp.U_NAME}?start={ident}_{file_id}")
+                    await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start={ident}_{file_id}")
             elif settings['is_shortlink'] and await db.has_premium_access(query.from_user.id):
                 if clicked == typed:
-                    await query.answer(url=f"https://yamlinks.com/st?api=8ba797ded52d10834ad44fc07bf9c659a67167d4&url=https://telegram.dog/{temp.U_NAME}?start={ident}_{file_id}")
+                    await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start={ident}_{file_id}")
                     return
                 else:
                     await query.answer(f"Hᴇʏ {query.from_user.first_name}, Tʜɪs Is Nᴏᴛ Yᴏᴜʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ. Rᴇǫᴜᴇsᴛ Yᴏᴜʀ's !", show_alert=True)
                     
             else:
                 if clicked == typed:
-                    await query.answer(url=f"https://yamlinks.com/st?api=8ba797ded52d10834ad44fc07bf9c659a67167d4&url=https://telegram.dog/{temp.U_NAME}?start={ident}_{file_id}")
+                    await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start={ident}_{file_id}")
                     return
                 else:
                     await query.answer(f"Hᴇʏ {query.from_user.first_name}, Tʜɪs Is Nᴏᴛ Yᴏᴜʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ. Rᴇǫᴜᴇsᴛ Yᴏᴜʀ's !", show_alert=True)
         except UserIsBlocked:
             await query.answer('Uɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ ᴍᴀʜɴ !', show_alert=True)
         except PeerIdInvalid:
-            await query.answer(url=f"https://yamlinks.com/st?api=8ba797ded52d10834ad44fc07bf9c659a67167d4&url=https://telegram.dog/{temp.U_NAME}?start={ident}_{file_id}")
+            await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start={ident}_{file_id}")
         except Exception as e:
-            await query.answer(url=f"https://yamlinks.com/st?api=8ba797ded52d10834ad44fc07bf9c659a67167d4&url=https://telegram.dog/{temp.U_NAME}?start={ident}_{file_id}")
+            await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start={ident}_{file_id}")
             
     elif query.data.startswith("sendfiles"):
         clicked = query.from_user.id
@@ -1378,25 +1378,24 @@ async def cb_handler(client: Client, query: CallbackQuery):
         try:
             if settings['is_shortlink'] and not await db.has_premium_access(query.from_user.id):
                 if SHORTLINK_MODE == True:
-                    await query.answer(url=f"https://yamlinks.com/st?api=8ba797ded52d10834ad44fc07bf9c659a67167d4&url=https://telegram.dog/{temp.U_NAME}?start=sendfiles1_{key}")
-                    
+                    await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start=sendfiles1_{key}")
                 else:
-                    await query.answer(url=f"https://yamlinks.com/st?api=8ba797ded52d10834ad44fc07bf9c659a67167d4&url=https://telegram.dog/{temp.U_NAME}?start=allfiles_{key}")
+                    await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start=allfiles_{key}")
             elif settings['is_shortlink'] and await db.has_premium_access(query.from_user.id):
-                await query.answer(url=f"https://yamlinks.com/st?api=8ba797ded52d10834ad44fc07bf9c659a67167d4&url=https://telegram.dog/{temp.U_NAME}?start=allfiles_{key}")
+                await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start=allfiles_{key}")
                 return 
             else:
-                await query.answer(url=f"https://yamlinks.com/st?api=8ba797ded52d10834ad44fc07bf9c659a67167d4&url=https://telegram.dog/{temp.U_NAME}?start=allfiles_{key}")
+                await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start=allfiles_{key}")
                 
             
                 
         except UserIsBlocked:
             await query.answer('Uɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ ᴍᴀʜɴ !', show_alert=True)
         except PeerIdInvalid:
-            await query.answer(url=f"https://yamlinks.com/st?api=8ba797ded52d10834ad44fc07bf9c659a67167d4&url=https://telegram.dog/{temp.U_NAME}?start=sendfiles3_{key}")
+            await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start=sendfiles3_{key}")
         except Exception as e:
             logger.exception(e)
-            await query.answer(url=f"https://yamlinks.com/st?api=8ba797ded52d10834ad44fc07bf9c659a67167d4&url=https://telegram.fog/{temp.U_NAME}?start=sendfiles4_{key}")
+            await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start=sendfiles4_{key}")
 
     elif query.data.startswith("unmuteme"):
         ident, userid = query.data.split("#")
@@ -2071,7 +2070,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('ꜱᴛɪᴄᴋᴇʀ-ɪᴅ', callback_data='sticker'),
              InlineKeyboardButton('ᴊ-ꜱᴏɴ', callback_data='json')
          ], [             
-             InlineKeyboardButton('HOME', callback_data='start')
+             InlineKeyboardButton('HOME', callback_data='start'),
+             InlineKeyboardButton('Owner', URL ='t.me/Itz_rohan_24')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -2310,20 +2310,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton("👇Select Your Language", callback_data="laninfo")
         ], [
-            InlineKeyboardButton("Tamil", callback_data="tamil_info"),
             InlineKeyboardButton("English", callback_data="english_info"),
             InlineKeyboardButton("Hindi", callback_data="hindi_info")
         ], [
-            InlineKeyboardButton("Malayalam", callback_data="malayalam_info"),
+            InlineKeyboardButton("Tamil", callback_data="tamil_info"),
+            InlineKeyboardButton("Malayalam", callback_data="malayalam_info")
+        ], [
             InlineKeyboardButton("Urdu", callback_data="urdu_info"),
             InlineKeyboardButton("Bangla", callback_data="bangladesh_info")
         ], [
             InlineKeyboardButton("Telugu", callback_data="telugu_info"),
-            InlineKeyboardButton("Kannada", callback_data="kannada_info"),
-            InlineKeyboardButton("Gujarati", callback_data="gujarati_info")
+            InlineKeyboardButton("Kannada", callback_data="kannada_info")
         ], [
+            InlineKeyboardButton("Gujarati", callback_data="gujarati_info"),
             InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
-
             ]]
             await client.edit_message_media(
                 query.message.chat.id, 
