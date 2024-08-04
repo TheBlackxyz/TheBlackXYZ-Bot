@@ -60,8 +60,7 @@ RENAME_MODE = bool(environ.get('RENAME_MODE', True)) # Set True or False
 # Background Remove
 RemoveBG_API = environ.get("RemoveBG_API", "f7stCpqeKmuDeHMX66qH5V8D")
 
-# Channel Links 😞
-THEBLACKXYZBOTZ = environ.get('THEBLACKXYZBOTZ', 'https://t.me/TheBlackXYZBotz')
+# Channel Links 💸
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/TheBlackXYZ_Movie_Group')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/TheBlackXYZ')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/TheBlackXYZ/155')
@@ -108,7 +107,7 @@ else:
 URL = environ.get("URL", "https://enormous-carol-theblackxyz9021-2822c420.koyeb.app/") # Fill env at deoplyment time Stream Mode Is True else avoide 
 
 # True Or False
-AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
+AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', False))
 PM_SEARCH = bool(environ.get('PM_SEARCH', True))
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
@@ -119,20 +118,20 @@ AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
-SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
+SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "False"), False)
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
-NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", 'True'))
+NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", None))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 # Token Verification Info : Thanks To TheBlackXYZ Botz
-VERIFY = bool(environ.get('VERIFY', True))
+VERIFY = bool(environ.get('VERIFY', False))
 VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', False))
-VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'yamlinks.com')
+VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'api.yamlinks.com')
 VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '8ba797ded52d10834ad44fc07bf9c659a67167d4')
 # if verify second shortner is True then fill below url and api
-VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', 'yamlinks.com')
+VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', 'api.yamlinks.com')
 VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '8ba797ded52d10834ad44fc07bf9c659a67167d4')
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/TheBlackXYZ/155')
 
