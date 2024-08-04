@@ -2053,7 +2053,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('ᴀᴅᴍɪɴ ᴏɴʟʏ', callback_data='admin'),
          ], [ 
              InlineKeyboardButton('ʀᴇɴᴀᴍᴇ', callback_data='r_txt'),   
-             InlineKeyboardButton('sᴛʀᴇᴀᴍ/ᴅᴏᴡɴʟᴏᴀᴅ', callback_data='s_txt') 
+             InlineKeyboardButton('sᴛʀᴇᴀᴍ', callback_data='s_txt') 
          ], [ 
              InlineKeyboardButton('ꜰɪʟᴇ ꜱᴛᴏʀᴇ', callback_data='store_file'),   
              InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele') 
@@ -2070,8 +2070,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('ꜱᴛɪᴄᴋᴇʀ-ɪᴅ', callback_data='sticker'),
              InlineKeyboardButton('ᴊ-ꜱᴏɴ', callback_data='json')
          ], [             
-             InlineKeyboardButton('HOME', callback_data='start'),
-             InlineKeyboardButton('Owner', URL ='t.me/Itz_rohan_24')
+             InlineKeyboardButton('HOME', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -2323,6 +2322,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("Kannada", callback_data="kannada_info")
         ], [
             InlineKeyboardButton("Gujarati", callback_data="gujarati_info"),
+            InlineKeyboardButton("Marathi", callback_data="gujarati_info")
+        ], [
             InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
             ]]
             await client.edit_message_media(
