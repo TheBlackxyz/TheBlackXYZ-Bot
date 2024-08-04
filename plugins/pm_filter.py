@@ -2322,7 +2322,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("Kannada", callback_data="kannada_info")
         ], [
             InlineKeyboardButton("Gujarati", callback_data="gujarati_info"),
-            InlineKeyboardButton("Marathi", callback_data="gujarati_info")
+            InlineKeyboardButton("Marathi", callback_data="marathi_info")
         ], [
             InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
             ]]
