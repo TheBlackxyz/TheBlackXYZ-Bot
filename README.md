@@ -296,10 +296,10 @@ ________________________________________________________________________________
 
 # Thanks To  Everyone 💞❤️
  - <b>
- - Thanks To Dan For His Awesome-[Pyrogram]
- - Thanks To [Mayuri-Chan]-[Pyrofork]
- - Thanks To [Tech VJ]
  - Thanks To [MrMKN]
+ - Thanks To [Tech VJ]
+ - Thanks To [Pyrogram]
+ - Thanks To [Pyrofork]
  - Thanks To [Eva Mariea]
  - Thanks To [ LazyDeveloperr]
  - Thanks To [ TheBlackXYZBotz]
