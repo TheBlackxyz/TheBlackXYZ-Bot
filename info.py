@@ -57,6 +57,9 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'blackcollection')
 #Rename Mode - True or False 🤔
 RENAME_MODE = bool(environ.get('RENAME_MODE', True)) # Set True or False
 
+# Background Remove
+RemoveBG_API = environ.get("RemoveBG_API", "f7stCpqeKmuDeHMX66qH5V8D")
+
 # Channel Links 😞
 THEBLACKXYZBOTZ = environ.get('THEBLACKXYZBOTZ', 'https://t.me/TheBlackXYZBotz')
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/TheBlackXYZ_Movie_Group')
