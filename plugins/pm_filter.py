@@ -2602,7 +2602,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
             )
-    
     elif query.data == "removebg":
         buttons = [[
             InlineKeyboardButton(text="𝖶𝗂𝗍𝗁 𝖶𝗁𝗂𝗍𝖾 𝖡𝖦", callback_data="rmbgwhite"),
@@ -2613,7 +2612,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='photo')
         ]]
         await query.message.edit_text("**Select Required Mode**", reply_markup=InlineKeyboardMarkup(buttons))
-            
+        
     elif query.data == "stick":
         buttons = [[
             InlineKeyboardButton(text="𝖭𝗈𝗋𝗆𝖺𝗅", callback_data="stkr"),
@@ -2731,86 +2730,116 @@ async def cb_handler(client: Client, query: CallbackQuery):
                
     elif query.data == "bright":
         await bright(client, query.message)
+        
     elif query.data == "mix":
         await mix(client, query.message)
+        
     elif query.data == "b|w":
         await black_white(client, query.message)
+        
     elif query.data == "circlewithbg":
         await circle_with_bg(client, query.message)
+        
     elif query.data == "circlewithoutbg":
         await circle_without_bg(client, query.message)
+        
     elif query.data == "green":
         await green_border(client, query.message)
+        
     elif query.data == "blue":
         await blue_border(client, query.message)
+        
     elif query.data == "red":
         await red_border(client, query.message)
+        
     elif query.data == "black":
         await black_border(client, query.message)
+        
     elif query.data == "circle_sticker":
         await round_sticker(client, query.message)
+        
     elif query.data == "inverted":
         await inverted(client, query.message)
+        
     elif query.data == "stkr":
         await sticker(client, query.message)
+        
     elif query.data == "cur_ved":
         await edge_curved(client, query.message)
+        
     elif query.data == "90":
         await rotate_90(client, query.message)
+        
     elif query.data == "180":
         await rotate_180(client, query.message)
+        
     elif query.data == "270":
         await rotate_270(client, query.message)
+        
     elif query.data == "contrast":
         await contrast(client, query.message)
+        
     elif query.data == "box":
         await box_blur(client, query.message)
+        
     elif query.data == "gas":
         await g_blur(client, query.message)
+        
     elif query.data == "normal":
         await normal_blur(client, query.message)
+        
     elif query.data == "sepia":
         await sepia_mode(client, query.message)
+        
     elif query.data == "pencil":
         await pencil(client, query.message)
+        
     elif query.data == "cartoon":
         await cartoon(client, query.message)
+        
     elif query.data == "normalglitch1":
         await normalglitch_1(client, query.message)
+        
     elif query.data == "normalglitch2":
         await normalglitch_2(client, query.message)
+        
     elif query.data == "normalglitch3":
         await normalglitch_3(client, query.message)
+        
     elif query.data == "normalglitch4":
         await normalglitch_4(client, query.message)
+        
     elif query.data == "normalglitch5":
         await normalglitch_5(client, query.message)
+        
     elif query.data == "scanlineglitch1":
         await scanlineglitch_1(client, query.message)
+        
     elif query.data == "scanlineglitch2":
         await scanlineglitch_2(client, query.message)
+        
     elif query.data == "scanlineglitch3":
         await scanlineglitch_3(client, query.message)
+        
     elif query.data == "scanlineglitch4":
         await scanlineglitch_4(client, query.message)
+        
     elif query.data == "scanlineglitch5":
         await scanlineglitch_5(client, query.message)
+        
     elif query.data == "rmbgwhite":
         await removebg_white(client, query.message)
+        
     elif query.data == "rmbgplain":
         await removebg_plain(client, query.message)
+        
     elif query.data == "rmbgsticker":
         await removebg_sticker(client, query.message)
-   elif query.data == "pages":
-       await query.answer("🤨 Cᴜʀɪᴏsɪᴛʏ Is A Lɪᴛᴛʟᴇ Mᴏʀᴇ, Isɴ'ᴛ Iᴛ? 😁", show_alert=True)
-    elif query.data == "howdl":
-        try: await query.answer(script.HOW_TO_DOWNLOAD.format(query.from_user.first_name), show_alert=True)
-        except: await query.message.edit(script.HOW_TO_DOWNLOAD.format(query.from_user.first_name))
-            
+        
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
         grpid = await active_connection(str(query.from_user.id))
-
+        
         if str(grp_id) != str(grpid):
             await query.message.edit("Yᴏᴜʀ Aᴄᴛɪᴠᴇ Cᴏɴɴᴇᴄᴛɪᴏɴ Hᴀs Bᴇᴇɴ Cʜᴀɴɢᴇᴅ. Gᴏ Tᴏ /connections ᴀɴᴅ ᴄʜᴀɴɢᴇ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴄᴏɴɴᴇᴄᴛɪᴏɴ.")
             return await query.answer(MSG_ALRT)
