@@ -289,33 +289,117 @@ class Database:
         })
         return count
 
-    async def set_thumbnail(self, id, file_id):
-        await self.col.update_one({'id': int(id)}, {'$set': {'file_id': file_id}})
+# Total User
+async def total_user():
+    user = dbcol.count_documents({})
+    return user
 
-    async def get_thumbnail(self, id):
-        user = await self.col.find_one({'id': int(id)})
-        return user.get('file_id', None)
+# insert bot Data
+async def botdata(chat_id):
+    bot_id = int(chat_id)
+    try:
+        bot_data = {"_id": bot_id, "total_rename": 0, "total_size": 0}
+        dbcol.insert_one(bot_data)
+    except:
+        pass
 
-    async def set_caption(self, id, caption):
-        await self.col.update_one({'id': int(id)}, {'$set': {'caption': caption}})
+# User Total Rename Data 
+async def total_rename(chat_id, renamed_file):
+    now = int(renamed_file) + 1
+    dbcol.update_one({"_id": chat_id}, {"$set": {"total_rename": str(now)}})
 
-    async def get_caption(self, id):
-        user = await self.col.find_one({'id': int(id)})
-        return user.get('caption', None)
+# Total Sizes Rename 
+async def total_size(chat_id, total_size, now_file_size):
+    now = int(total_size) + now_file_size
+    dbcol.update_one({"_id": chat_id}, {"$set": {"total_size": str(now)}})
 
-    async def set_msg_command(self, id, com):
-        await self.col.update_one({'id': int(id)}, {'$set': {'message_command': com}})
+# insert user data
+async def insert(chat_id):
+    user_id = int(chat_id)
+    user_det = {"_id": user_id, "file_id": None, "caption": None, "daily": 0, "date": 0,
+                "uploadlimit": 5368709120, "used_limit": 0, "usertype": "Free", "prexdate": None}
+    try:
+        dbcol.insert_one(user_det)
+    except:
+        return True
+        pass
 
-    async def get_msg_command(self, id):
-        user = await self.col.find_one({'id': int(id)})
-        return user.get('message_command', None)
 
-    async def set_save(self, id, save):
-        await self.col.update_one({'id': int(id)}, {'$set': {'save': save}})
+async def dateupdate(chat_id, date):
+    dbcol.update_one({"_id": chat_id}, {"$set": {"date": date}})
 
-    async def get_save(self, id):
-        user = await self.col.find_one({'id': int(id)})
-        return user.get('save', False) 
+async def used_limit(chat_id, used):
+    dbcol.update_one({"_id": chat_id}, {"$set": {"used_limit": used}})
+
+async def usertype(chat_id, type):
+    dbcol.update_one({"_id": chat_id}, {"$set": {"usertype": type}})
+
+async def uploadlimit(chat_id, limit):
+    dbcol.update_one({"_id": chat_id}, {"$set": {"uploadlimit": limit}})
+
+async def addpre(chat_id):
+    date = add_date()
+    dbcol.update_one({"_id": chat_id}, {"$set": {"prexdate": date[0]}})
+
+async def addpredata(chat_id):
+    dbcol.update_one({"_id": chat_id}, {"$set": {"prexdate": None}})
+
+async def daily(chat_id, date):
+    dbcol.update_one({"_id": chat_id}, {"$set": {"daily": date}})
+
+async def find(chat_id):
+    id = {"_id": chat_id}
+    x = dbcol.find(id)
+    for i in x:
+        file = i["file_id"]
+        try:
+            caption = i["caption"]
+        except:
+            caption = None
+
+        return [file, caption]
+
+async def getid():
+    values = []
+    for key in dbcol.find():
+        id = key["_id"]
+        values.append((id))
+    return values
+
+async def delete(id):
+    dbcol.delete_one(id)
+
+
+async def find_one(id):
+    return dbcol.find_one({"_id": id})
+    
+async def set_thumbnail(self, id, file_id):
+    wait self.col.update_one({'id': int(id)}, {'$set': {'file_id': file_id}})
+
+async def get_thumbnail(self, id):
+    user = await self.col.find_one({'id': int(id)})
+    return user.get('file_id', None)
+
+async def set_caption(self, id, caption):
+    await self.col.update_one({'id': int(id)}, {'$set': {'caption': caption}})
+
+async def get_caption(self, id):
+    user = await self.col.find_one({'id': int(id)})
+    return user.get('caption', None)
+
+async def set_msg_command(self, id, com):
+    await self.col.update_one({'id': int(id)}, {'$set': {'message_command': com}})
+
+async def get_msg_command(self, id):
+    user = await self.col.find_one({'id': int(id)})
+    return user.get('message_command', None)
+
+async def set_save(self, id, save):
+    await self.col.update_one({'id': int(id)}, {'$set': {'save': save}})
+
+async def get_save(self, id):
+    user = await self.col.find_one({'id': int(id)})
+    return user.get('save', False)
     
 
 db = Database(DATABASE_URI, DATABASE_NAME)
